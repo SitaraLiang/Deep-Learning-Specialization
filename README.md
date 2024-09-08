@@ -1,2 +1,2 @@
 # Deep-Learning-Specialization
-Computer vision and NLP projects
+Computer Vision and NLP projects
