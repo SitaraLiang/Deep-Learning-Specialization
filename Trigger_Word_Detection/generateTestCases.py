@@ -1,4 +1,3 @@
-# New Generate Test Cases 
 import numpy as np 
 import math 
 import os,sys
@@ -52,10 +51,6 @@ from grader_support import stdout_redirector
 from grader_support import util
 
 
-
-
-# This grader is for the Emojify assignment
-
 mFiles = [
     "is_overlapping.py",
     "insert_audio_clip.py",
@@ -83,7 +78,6 @@ inserted = graph_spectrogram('test.wav')
 arr1 = insert_ones(np.zeros((1, Ty)), 9)
 
 # generate the test Cases for create_training_example
-
 n = AudioSegment.from_wav("negative.wav")
 
 A = []

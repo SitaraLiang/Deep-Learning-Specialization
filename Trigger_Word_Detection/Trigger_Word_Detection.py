@@ -529,13 +529,13 @@ def preprocess_audio(filename):
     segment.export(filename, format='wav')
 
 
-your_filename = "audio_examples/my_audio.wav"
+my_filename = "audio_examples/my_audio.wav"
 
-preprocess_audio(your_filename)
-IPython.display.Audio(your_filename) # listen to the audio you uploaded 
+preprocess_audio(my_filename)
+IPython.display.Audio(my_filename) # listen to the audio you uploaded 
 
 # use the model to predict when you say activate in the 10 second audio clip
 chime_threshold = 0.2
-prediction = detect_triggerword(your_filename)
-chime_on_activate(your_filename, prediction, chime_threshold)
+prediction = detect_triggerword(my_filename)
+chime_on_activate(my_filename, prediction, chime_threshold)
 IPython.display.Audio("./chime_output.wav")
